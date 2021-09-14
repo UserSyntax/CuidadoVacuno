@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>CuidadoVacuno</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">CuidadoVacuno</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">¿Quienes Somos?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#discover" class="nav__link">¿Como lo hacemos?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#place" class="nav__link">Contactanos</a>
+          </li>
+        </ul>
+
+        <div class="nav__dark">
+          <!-- Theme change button -->
+          <span class="change-theme-name">Dark mode</span>
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </div>
+
+        <i class="ri-close-line nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-function-line"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home" id="home">
+      <img src="assets/img/inde.png" alt="" class="home__img">
+
+      <div class="home__container container grid">
+        <div class="home__data">
+          <span class="home__data-subtitle">Alimentación y cuidado vacuno</span>
+          <h1 class="home__data-title"><b>Venta de Ganado</b></h1>
+          <br><br><br>
+          <a href="#place" class="button">Contactanos</a>
+        </div>
+
+        <div class="home__info">
+          <div>
+            <span class="home__info-title">Alimentación saludable</span>
+            <a href="#discover" class="button button--flex button--link home__info-button">
+              Más <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+
+          <div class="home__info-overlay">
+            <img src="assets/img/galeria1.png" alt="" class="home__info-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <div class="about__container container grid">
+        <div class="about__data">
+          <h2 class="section__title about__title">¿Quienes Somos?</h2>
+          <p class="about__description">Somos emprendedores especialistas en venta de ganado de raza simental con la finalidad de ofrecer la mejor calidad y eficiencia de su ganado a nivel nacional 🐂🥩.
+          </p>
+          <a href="#place" class="button">Contactanos</a>
+        </div>
+
+        <div class="about__img">
+          <div class="about__img-overlay">
+            <img src="assets/img/torito2.png" alt="" class="about__img-one">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== DISCOVER ====================-->
+    <section class="discover section" id="discover">
+      <h2 class="section__title">¿Como lo hacemos?</h2>
+      <div class="discover__container container swiper-container">
+        <p class="toritos-description">Garantizamos el cuidado del ganado hasta tener el peso adecuado para su venta 🚚👍.</p>
+
+        <div class="swiper-wrapper">
+          <!--==================== DISCOVER 1 ====================-->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/torito1.png" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Alimentación</h2>
+              <span class="discover__description">Crecimiento prolongado 🐂.</span>
+            </div>
+          </div>
+
+          <!--==================== DISCOVER 2 ====================-->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/ny.png" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Ambiente</h2>
+              <span class="discover__description">Propicio para su desarrollo ☀️.</span>
+            </div>
+          </div>
+
+          <!--==================== DISCOVER 3 ====================-->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/torito11.jpeg" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Cuidado</h2>
+              <span class="discover__description">Adecuado las 24 horas del día 🐮.</span>
+            </div>
+          </div>
+
+          <!--==================== DISCOVER 4 ====================-->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/torito3.png" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Aspecto</h2>
+              <span class="discover__description">Robusto en fortaleza 💪.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== VIDEO ====================-->
+    <section class="video section">
+      <h2 class="section__title">Te mostramos como lo hacemos</h2>
+
+      <div class="video__container container">
+        <p class="video__description">La venta del ganado está garantizado por su cuidado eficiente y a costo adeacuado al mercado 🥩.</p>
+
+        <div class="video__content">
+          <video id="video-file">
+            <source src="assets/video/Simmental.mp4" type="video/mp4">
+          </video>
+
+          <button class="button button--flex video__button" id="video-button">
+            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PLACES ====================-->
+    <section class="place section">
+      <h2 class="section__title">Galería de fotos</h2>
+
+      <div class="place__container container grid">
+        <!--==================== PLACES CARD 1 ====================-->
+        <div class="place__card">
+          <img src="assets/img/galeria1.png" alt="" class="place__img">
+
+          <button class="button button--flex place__button">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+
+        <!--==================== PLACES CARD 2 ====================-->
+        <div class="place__card">
+          <img src="assets/img/galeria2.png" alt="" class="place__img">
+
+          <button class="button button--flex place__button">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+
+        <!--==================== PLACES CARD 3 ====================-->
+        <div class="place__card">
+          <img src="assets/img/galeria3.png" alt="" class="place__img">
+
+          <button class="button button--flex place__button">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+
+        <!--==================== PLACES CARD 4 ====================-->
+        <div class="place__card">
+          <img src="assets/img/galeria4.png" alt="" class="place__img">
+
+          <button class="button button--flex place__button">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+
+        <!--==================== PLACES CARD 5 ====================-->
+        <div class="place__card">
+          <img src="assets/img/galeria5.png" alt="" class="place__img">
+
+          <button class="button button--flex place__button">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+
+        <!--==================== PLACES CARD 6 ====================-->
+        <div class="place__card">
+          <img src="assets/img/galeria6.png" alt="" class="place__img">
+
+          <button class="button button--flex place__button">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SUBSCRIBE ====================-->
+    <section class="subscribe section" id="place">
+      <div class="subscribe__bg">
+        <div class="subscribe__container container">
+          <h2 class="section__title subscribe__title">Contáctenos</h2>
+          <p class="subscribe__description">Estos son nuestros principales números de contacto 📞: <br><br>Javier Lopez: 966503666 <br>Rocío Espinoza: 971155225 <br></p>
+          <!--
+            <p class="subscribe__description">ó</p>
+            <p class="subscribe__description">Puede enviarnos un mensaje por Whatsapp <br> en el botón ubicado a la derecha 👉</p>
+          -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <div class="footer__content grid">
+        <div class="footer__data">
+          <h3 class="footer__title">CuidadoVacuno</h3>
+          <p class="footer__description">Confíenos su ganado, lo<br> cuidamos y alimentamos <br> para su distribución
+            exitosa.
+          </p>
+          <div>
+            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+              <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="footer__social">
+              <i class="ri-twitter-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+              <i class="ri-youtube-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__data">
+          <h3 class="footer__subtitle">Acerca</h3>
+          <ul>
+            <li class="footer__item">
+              <a href="" class="footer__link">Acerca de</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Caracteristicas</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Noticias y Blogs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__data">
+          <h3 class="footer__subtitle">Compañia</h3>
+          <ul>
+            <li class="footer__item">
+              <a href="" class="footer__link">Equipo</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Planes y precios</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Conviertete en un miembro</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__data">
+          <h3 class="footer__subtitle">Ayuda</h3>
+          <ul>
+            <li class="footer__item">
+              <a href="" class="footer__link">FAQs</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Estos somos</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Contáctenos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__rights">
+        <p class="footer__copy">&#169; 2021 Jorge Ayala. Todos los derechos reservados.</p>
+        <div class="footer__terms">
+          <a href="#" class="footer__terms-link">Terminos & Condiciones</a>
+          <a href="#" class="footer__terms-link">Política de privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line scrollup__icon"></i>
+  </a>
+
+  <!--=============== SCROLL REVEAL===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
